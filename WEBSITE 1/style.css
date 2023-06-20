@@ -1,0 +1,133 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image:url(images/1.jpg);
+    width: 100%;
+    background: linear-gradient(to top,rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%),url(images/1.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 109vh;
+}
+.menu-bar{
+    background: rgb(71,255,179);
+    text-align: center;
+}
+.menu-bar ul{
+    display: inline-flex;
+        list-style: none;
+        color: rgb(71,136,255);
+}
+.menu-bar ul li{
+    width: 120px;
+    margin: 15px;
+    padding: 15px;
+}
+.menu-bar ul li a{
+    text-decoration: none;
+    color:rgb(71,136,255);
+}
+.active, .menu-bar ul li:hover{
+    background: rgb(71,255,179) ;
+    border-radius: 3px;
+
+}
+.menu-bar .fa{
+    margin-left: 8px;
+
+}
+.sub-menu-1{
+    display: none;
+}
+.menu-bar ul li:hover .sub-menu-1{
+    display: block;
+    position: absolute;
+    background: rgb(71,255,179);
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.menu-bar ul li:hover .sub-menu-1 ul{
+    display: block;
+    margin: 5px;
+}
+.menu-bar ul li:hover .sub-menu-1 ul li{
+    width: 120px;
+    height: 30px;
+    padding: 10px;
+    background: transparent;
+    border-radius: 0;
+    text-align: left;
+}
+.menu-bar ul li:hover .sub-menu-1 ul li:last-child{
+    border-bottom: none;
+}
+.menu-bar ul li:hover .sub-menu-1 ul li a:hover{
+    color:rgba(0,0,0,0.8);
+}
+.fa-angle-right{
+    float: right;
+}
+.sub-menu-2{
+    display: none;
+}
+.hover-me:hover .sub-menu-2{
+    position: absolute;
+    display: block;
+    margin-top: -40px;
+    margin-left: 140px;
+    background-color: rgb(71,255,179);
+}
+.content{
+    width: 1200px;
+    height: auto;
+    margin: auto;
+    color: rgb(0,0,0);
+    position: relative;
+}
+
+.content .par{
+    padding-left: 20px;
+    padding-bottom: 25px;
+    font-family: sans-serif;
+    letter-spacing: 1.2px;
+    line-height: 30px;
+}
+
+.content h1{
+    font-family: 'Times New Roman';
+    font-size: 50px;
+    padding-left: 20px;
+    margin-top: 9%;
+    letter-spacing: 2px;
+}
+
+.content .cn{
+    width: 160px;
+    height: 40px;
+    background: rgb(71,255,179);
+    border: none;
+    margin-bottom: 10px;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .4s ease;
+}
+
+.content .cn a{
+    text-decoration: none;
+    color: #000;
+    transition: .3s ease;
+}
+
+.cn:hover{
+    background-color: rgb(71,255,179);
+}
+
+.content span{
+    color:rgb(246,71,255);
+    font-size: 60px;
+}
+
+
